@@ -1,5 +1,5 @@
 import { usePathname } from 'next/navigation';
-import { i18n } from '../shared/dictionaries';
+import { i18n } from '../app/shared/dictionaries';
 
 export default function useLang() {
   const pathName = usePathname() || '';

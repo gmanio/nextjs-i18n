@@ -1,5 +1,6 @@
+'use client';
 import Image from 'next/image';
-import { LocaleType, getDictionary } from './dictionaries';
+import { LocaleType, getDictionary } from '../shared/dictionaries/dictionaries';
 
 export default async function Page({ params: { lang } }: { params: { lang: LocaleType } }) {
   const dict = await getDictionary(lang); // en, ko
